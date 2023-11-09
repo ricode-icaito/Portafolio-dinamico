@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Esta es mi pagina web">
+  <meta name="author" content="icaito-ricode">
+  <meta name="keywords" content="Mi pagina, mi sitio, mi web">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Portafolio Dinamico</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Ricardo Diosdado</h1>
+				<p>Desarrollador Web</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar con minusculas">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">C-desde cero</a>
+				<a href="#">C-intermedio</a>
+				<a href="#">Pag-webs</a>
+				<a href="#">Programacion</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="programacion"
+				 data-etiquetas="programacion-certificado-internacional"
+				 data-descripcion="Este certificado lo obtuve con mucho esfuerzo y dedicacion."
+			>
+				<div class="item-contenido">
+					<img src="img/certificate.png" title="CERTIFICADO INTERNACIONAL" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="programacion"
+				 data-etiquetas="programacion-certificado-edeteam"
+				 data-descripcion="Valio la pena tantas desveladas..."
+			>
+				<div class="item-contenido">
+					<img src="img/edteam.png" title="CERTIFICADO EDteam" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pag-webs"
+				 data-etiquetas="pag-webs-paguina-google"
+				 data-descripcion="Muy buenos los cursos que imparte esta universidad."
+			>
+				<div class="item-contenido">
+					<img src="img/web google.png" title="MI PAGUINA WEB EN GOOGLE" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pag-webs"
+				 data-etiquetas="pag-webs-paguina-wix"
+				 data-descripcion="Paguina de muy buena calidad..."
+			>
+				<div class="item-contenido">
+					<img src="img/wix-web-my site.png" title="MI PAGUINA EN WIX" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="c-intermedio"
+				 data-etiquetas="c-intermedio-constancia-excel"
+				 data-descripcion="Aprendiendo las hojas de calculo."
+			>
+				<div class="item-contenido">
+					<img src="img/excel intermedio.png" title="CURSO DE EXCEL INTERMEDIO" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="c-desde cero"
+				 data-etiquetas="c-desde cero-constancia-word"
+				 data-descripcion="Aprendiendo word."
+			>
+				<div class="item-contenido">
+					<img src="img/word desde cero.png" title="CURSO WORD DESDE CERO" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="c-desde cero"
+				 data-etiquetas="c-desde cero-constancia-power point"
+				 data-descripcion="Aprendiendo power point."
+			>
+				<div class="item-contenido">
+					<img src="img/power point desde cero.png" 
+title="CURSO POWER POINT DESDE CERO" alt="img">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="c-desde cero"
+				 data-etiquetas="c-desde cero-constancia-excel"
+				 data-descripcion="Aprendiendo excel."
+			>
+				<div class="item-contenido">
+					<img src="img/excel desde cero.png" title="CURSO DE EXCEL DESDE CERO" alt="img">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pag-webs"
+				 data-etiquetas="pag-webs-curso-constancia-google"
+				 data-descripcion="Gracias a la wam azcapotzalco..
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="img/paguina web google.png" title="CURSO DE MI PAGUINA EN GOOGLE" alt="img">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://twitter.com/home" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.youtube.com/channel/UCtb2aRcX0czcpzNFuiqW4Aw" target="_blank" class="youtube">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+        <div class="contenedor-icono">
+					<a href="https://www.facebook.com/" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="http://www.instagram.com" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+        <div class="contenedor-icono">
+					<a href="https://sites.google.com/view/icaito-ricode/p%C3%A1gina-principal" target="_blank" class="sites.google">
+						<i class="fab fa-google"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por: <a href="https://rickydios27.wixsite.com/my-site" target="_blank">Ricardo Diosdado</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js">
+  </script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"> 
+  </script>
+	<script src="script.js"></script>
+  <footer>
+    &copy; copyright DERECHOS RESERVADOS D.H.R (70-23)
+  </footer>
+</body>
+</html>
